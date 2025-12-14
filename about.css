@@ -1,0 +1,141 @@
+:root {
+  --black: #0b0b0b;
+  --pink: #f2c6f2;
+  --text: #222;
+  --muted: #888;
+  --text-light: #f5f5f5;
+  --white: #ffffff;
+  --text-dark: #222222;
+}
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: var(--white);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  height: 102px;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#logo {
+  position: absolute;
+  left: 60px;
+  width: 120px;
+  top: 0;
+}
+
+#mainMenu {
+  display: flex;
+  gap: 38.1px;
+}
+
+#mainMenu a {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding-top: 2px;
+
+}
+
+/* Active (current page) */
+#mainMenu a.active {
+  color: var(--pink);
+}
+
+/* Optional hover */
+#mainMenu a:hover {
+  color: var(--pink);
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.about-section {
+  max-width: 1200px;
+  margin: 120px auto 0;
+  padding: 0 20px;
+}
+
+.about-content {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+/* IMAGE */
+.about-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* TEXT */
+.about-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin: 40px 0 15px;
+}
+
+.about-text p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #777;
+  max-width: 520px;
+  font-family: Space mono, monospace;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 24px;
+}
+
+footer hr {
+  width: 240px;
+  margin: 0 auto 24px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.icons img {
+  width: 22px;
+}
